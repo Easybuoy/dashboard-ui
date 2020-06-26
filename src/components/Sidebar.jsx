@@ -17,7 +17,7 @@ const StyledSidebar = styled.aside`
   flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
-  width: 6%;
+  width: 5%;
   overflow-y: scroll;
   background-color: white;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);

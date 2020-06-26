@@ -114,52 +114,6 @@ const Budget = () => {
         motionStiffness={90}
         motionDamping={15}
         isInteractive={false}
-        // defs={[
-        //   {
-        //     id: "dots",
-        //     type: "patternDots",
-        //     background: "inherit",
-        //     color: "rgba(255, 255, 255, 0.3)",
-        //     size: 4,
-        //     padding: 1,
-        //     stagger: true,
-        //   },
-        //   {
-        //     id: "lines",
-        //     type: "patternLines",
-        //     background: "inherit",
-        //     color: "rgba(255, 255, 255, 0.3)",
-        //     rotation: -45,
-        //     lineWidth: 6,
-        //     spacing: 10,
-        //   },
-        // ]}
-        // fill={[
-        //   {
-        //     match: {
-        //       id: "Lagos",
-        //     },
-        //     id: "dots",
-        //   },
-        //   {
-        //     match: {
-        //       id: "Kaduna",
-        //     },
-        //     id: "dots",
-        //   },
-        //   {
-        //     match: {
-        //       id: "PH",
-        //     },
-        //     id: "dots",
-        //   },
-        //   {
-        //     match: {
-        //       id: "Ibadan",
-        //     },
-        //     id: "dots",
-        //   },
-        // ]}
         legends={[
           {
             anchor: "right",
