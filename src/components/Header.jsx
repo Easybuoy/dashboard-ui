@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Navigation from "./Navigation";
+import Breadcrumb from "./Breadcrumb";
 
 const StyledHeader = styled.nav`
   display: flex;
@@ -15,6 +16,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Navigation />
+      <Breadcrumb />
     </StyledHeader>
   );
 };
