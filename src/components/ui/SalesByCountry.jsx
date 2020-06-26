@@ -27,7 +27,6 @@ const StyledSalesByCountry = styled.div`
 
     .chart {
       width: 45%;
-      /* height: 600px; */
 
       div {
         height: 300px !important;
