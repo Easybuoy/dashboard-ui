@@ -28,6 +28,7 @@ const StyledBreadcrumb = styled.nav`
 
     p {
       font-weight: 400;
+      font-size: 0.9rem;
     }
   }
 
