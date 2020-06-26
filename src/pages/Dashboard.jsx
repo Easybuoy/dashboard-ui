@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Sidebar from "../components/Sidebar";
-import Header from '../components/Header'
+import Header from "../components/Header";
 import Main from "../components/ui/Main";
 
 const StyledDashboard = styled.div`
@@ -12,6 +12,9 @@ const StyledDashboard = styled.div`
   section {
     width: 94%;
     background-color: #f1f3f9;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
   }
 `;
 
@@ -20,8 +23,8 @@ const Dashboard = () => {
     <StyledDashboard>
       <Sidebar />
       <section>
-          <Header />
-          <Main />
+        <Header />
+        <Main />
       </section>
     </StyledDashboard>
   );

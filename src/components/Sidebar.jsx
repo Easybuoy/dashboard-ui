@@ -18,10 +18,9 @@ const StyledSidebar = styled.aside`
   flex-direction: column;
   height: 100vh;
   width: 6%;
-  overflow-x: scroll;
+  overflow-y: scroll;
   background-color: white;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
-
   align-items: center;
   padding-top: 1.2rem;
 
@@ -35,7 +34,7 @@ const StyledSidebar = styled.aside`
 
   .active {
     background-color: #f6f9fc;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 2px;
   }
 `;
