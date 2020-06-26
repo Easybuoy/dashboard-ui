@@ -14,7 +14,6 @@ const StyledMain = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   width: 94%;
-  height: auto;
   
   .full {
     width: 100%;
