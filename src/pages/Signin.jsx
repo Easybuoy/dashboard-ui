@@ -125,7 +125,7 @@ const StyledSignin = styled.section`
 `;
 
 const Signin = ({ history }) => {
-  const login = () => history.push("/");
+  const login = () => history.push("/dashboard");
 
   return (
     <StyledSignin>
