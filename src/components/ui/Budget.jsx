@@ -4,7 +4,7 @@ import { ResponsivePieCanvas } from "@nivo/pie";
 
 const StyledBudget = styled.div`
   background-color: white;
-  width: 45%;
+  width: 47.5%;
   border-radius: 5px;
 
   .top {

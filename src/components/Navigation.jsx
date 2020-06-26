@@ -11,7 +11,7 @@ const StyledNavigation = styled.nav`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-  padding: 0.5rem 0;
+  padding: 1rem 0 0.5rem 0;
 
   .search {
     background-color: white;

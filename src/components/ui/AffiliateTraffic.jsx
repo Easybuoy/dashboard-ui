@@ -4,7 +4,7 @@ import { ResponsiveBar } from "@nivo/bar";
 
 const StyledAffiliateTraffic = styled.div`
   background-color: white;
-  width: 45%;
+  width: 47.5%;
   border-radius: 5px;
   height: 500px;
   padding-bottom: 2rem;
