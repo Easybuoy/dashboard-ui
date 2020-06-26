@@ -26,7 +26,7 @@ const StyledSignup = styled.section`
     position: absolute;
     background-color: #f7fafc;
     height: 50vh;
-    width: 35%;
+    width: 30%;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +83,7 @@ const StyledSignup = styled.section`
         flex-wrap: wrap;
         margin: 2rem 0;
         justify-content: flex-start;
+        width: 100%;
         input {
           background-color: white;
           border: none;
@@ -99,6 +100,18 @@ const StyledSignup = styled.section`
         justify-content: center;
         margin-bottom: 1rem;
       }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    border-radius: 10px;
+    left: 45%;
+    bottom: 200px;
+    margin: auto;
+
+    span {
+      color: #12c3e5;
     }
   }
 `;
@@ -146,6 +159,12 @@ const Signup = () => {
             </Button>
           </div>
         </div>
+      </div>
+
+      <div className="footer">
+        <p style={{ color: "white" }}>
+          Existing User? <span>Login</span>
+        </p>
       </div>
     </StyledSignup>
   );
