@@ -37,6 +37,13 @@ const StyledSalesByCountry = styled.div`
 
       .option {
         height: auto !important;
+
+        button {
+          margin: 0 0.3rem;
+          padding: 0.3rem 0.6rem;
+          background-color: #7764e4;
+          color: white;
+        }
       }
     }
 
@@ -93,7 +100,8 @@ const SalesByCountry = () => {
           />
 
           <div className="option">
-            <p>Plus</p>
+            <Button>+</Button>
+            <Button>-</Button>
           </div>
         </div>
         <div className="details">

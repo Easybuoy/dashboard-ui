@@ -9,6 +9,7 @@ const StyledButton = styled.button`
   border: 1px solid #8d7ee8;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
   font-weight: bolder;
+  cursor: pointer;
 `;
 
 const Button = ({ children }) => {
