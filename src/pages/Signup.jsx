@@ -25,7 +25,7 @@ const StyledSignup = styled.section`
   .signup {
     position: absolute;
     background-color: #f7fafc;
-    height: 60vh;
+    height: 50vh;
     width: 35%;
     border-radius: 10px;
     display: flex;
@@ -44,8 +44,11 @@ const StyledSignup = styled.section`
       text-align: center;
       flex-direction: column;
       width: 100%;
+      margin-top: 1rem;
+
       h3 {
-        font-weight: bold;
+        font-weight: bolder;
+        font-size: 1.5rem;
         color: #182c4d;
         margin: 0;
       }
@@ -53,6 +56,8 @@ const StyledSignup = styled.section`
       p {
         color: #788498;
         font-size: 0.8rem;
+        font-weight: bolder;
+        margin: 0.5rem 0;
       }
     }
 
@@ -60,7 +65,7 @@ const StyledSignup = styled.section`
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      padding: 3rem;
+      padding: 0 3rem;
 
       p {
         color: #788498;
@@ -76,7 +81,7 @@ const StyledSignup = styled.section`
       .confirmation {
         display: flex;
         flex-wrap: wrap;
-        margin: 1rem 0;
+        margin: 2rem 0;
         justify-content: flex-start;
         input {
           background-color: white;
@@ -92,7 +97,7 @@ const StyledSignup = styled.section`
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 1rem 0;
+        margin-bottom: 1rem;
       }
     }
   }
