@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Input from "../components/Input";
 import Button from "../components/Button";
@@ -83,6 +84,7 @@ const StyledSignup = styled.section`
         flex-wrap: wrap;
         margin: 2rem 0;
         justify-content: flex-start;
+        align-items: center;
         width: 100%;
         input {
           background-color: white;
@@ -110,13 +112,16 @@ const StyledSignup = styled.section`
     bottom: 200px;
     margin: auto;
 
-    span {
+    a {
       color: #12c3e5;
+      text-decoration: none;
     }
   }
 `;
 
-const Signup = () => {
+const Signup = ({ history }) => {
+  const login = () => history.push("/");
+
   return (
     <StyledSignup>
       <div className="background">
@@ -148,6 +153,7 @@ const Signup = () => {
 
           <div className="action">
             <Button
+              onClick={login}
               style={{
                 backgroundColor: "#23cdef",
                 color: "white",
@@ -163,7 +169,7 @@ const Signup = () => {
 
       <div className="footer">
         <p style={{ color: "white" }}>
-          Existing User? <span>Login</span>
+          Existing User? <Link to="login">Login</Link>
         </p>
       </div>
     </StyledSignup>
