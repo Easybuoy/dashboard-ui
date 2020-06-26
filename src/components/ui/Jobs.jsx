@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import Button from "../Button";
-
-import ChevronUp from "../../assets/images/chevron-up.svg";
-import ChevronDown from "../../assets/images/chevron-down.svg";
+import Chevron from "../Chevron";
+import Avatar from "../../assets/images/avatar.jpg";
 
 const StyledJobs = styled.div`
   background-color: white;
@@ -31,28 +30,60 @@ const StyledJobs = styled.div`
     align-items: center;
     background-color: #f1f3f9;
     padding: 0.5rem 1rem;
-
+    font-weight: bold;
+    justify-content: space-between;
     div {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      margin-right: 2rem;
-      
+      /* margin-right: 3rem; */
+
       span {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin-right: 0.5rem;
         color: #afbac8;
       }
-      .select {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    }
+  }
 
-        img {
-          width: 7px;
-          height: 7px;
-          margin: 0.1rem 0;
-        }
+  .tbody {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      /* margin-right: 2rem; */
+
+      /* span {
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+        color: #afbac8;
+      } */
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      p {
+        font-size: 0.8rem;
+        font-weight: bolder;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -69,14 +100,57 @@ const Jobs = () => {
       <div className="th">
         <div>
           <span>PROJECT</span>
-          <div className="select">
-            <img src={ChevronUp} />
-            <img src={ChevronDown} />
-          </div>
+          <Chevron />
         </div>
 
         <div>
           <span>CREATED AT</span>
+        </div>
+
+        <div>
+          <span>STATUS</span>
+          <Chevron />
+        </div>
+
+        <div>
+          <span>BUDGET</span>
+          <Chevron />
+        </div>
+
+        <div>
+          <span>TEAM</span>
+        </div>
+
+        <div>
+          <span>COMPLETION</span>
+          <Chevron />
+        </div>
+      </div>
+
+      <div className="tbody">
+        <div className="project">
+          <img src={Avatar} alt="avatar" />
+          <p>Project X</p>
+        </div>
+
+        <div>
+          <p>20/03/2020</p>
+        </div>
+
+        <div>
+          <p>Pending</p>
+        </div>
+
+        <div>
+          <p>$2500</p>
+        </div>
+
+        <div>
+          <p>$2500</p>
+        </div>
+
+        <div>
+          <p>$2500</p>
         </div>
       </div>
     </StyledJobs>

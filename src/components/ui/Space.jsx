@@ -24,6 +24,7 @@ const StyledSpace = styled.div`
       font-weight: bold;
       color: #43435d;
       margin: 0 0 0.2rem 0;
+      width: 100%;
     }
 
     span {
