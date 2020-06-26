@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Bell from "../assets/images/bell.svg";
 import Help from "../assets/images/help.svg";
+import Search from "../assets/images/search.svg";
 import Avatar from "../assets/images/avatar.jpg";
 
 const StyledNavigation = styled.nav`
@@ -13,12 +14,22 @@ const StyledNavigation = styled.nav`
   padding: 0.5rem 0;
 
   .search {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 1.4rem;
+    padding: 0.5rem;
+    border-radius: 3rem;
+
+    img {
+      margin-right: 0.3rem;
+    }
     input {
+      padding-left: 1rem;
       width: auto;
-      margin-left: 1.4rem;
-      border-radius: 3rem;
-      padding: 1rem;
       border: none;
+      width: 70%;
     }
   }
 
@@ -50,6 +61,7 @@ const Navigation = () => {
   return (
     <StyledNavigation>
       <div className="search">
+        <img src={Search} alt="search" />
         <input placeholder="Search" />
       </div>
 
