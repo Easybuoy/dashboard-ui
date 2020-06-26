@@ -12,14 +12,15 @@ const StyledHeaderDataItem = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 1rem;
+    position: relative;
     .left {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-
+      padding-left: 1rem;
       p {
         color: #a6b2bf;
         font-size: 0.7rem;
@@ -33,6 +34,8 @@ const StyledHeaderDataItem = styled.div`
     }
 
     .right {
+      right: 15px;
+      position: absolute;
       span {
         padding: 0.7rem;
         border-radius: 50%;
