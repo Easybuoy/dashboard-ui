@@ -14,7 +14,7 @@ const StyledSpace = styled.div`
   }
 
   .content {
-    padding: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -32,8 +32,17 @@ const StyledSpace = styled.div`
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       color: #52617b;
+      font-weight: bold;
+    }
+
+    a {
+      color: #7d6be6;
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
     }
   }
 `;
@@ -53,6 +62,8 @@ const Space = () => {
           suscipit neque eligendi quam sunt eos cum provident vitae nesciunt
           quos.
         </p>
+
+        <a href="##">View article</a>
       </div>
     </StyledSpace>
   );
