@@ -4,12 +4,12 @@ import styled from "styled-components";
 import Image from "../../assets/images/avatar.jpg";
 const StyledSpace = styled.div`
   background-color: white;
-  width: 30%;
+  width: 25%;
   border-radius: 5px;
 
   img {
     width: 100%;
-    height: 150px;
+    height: 250px;
     object-fit: cover;
   }
 

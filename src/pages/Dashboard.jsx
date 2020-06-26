@@ -8,7 +8,7 @@ import Main from "../components/ui/Main";
 const StyledDashboard = styled.div`
   display: flex;
   flex-wrap: wrap;
-  max-width: 1500px;
+  max-width: 2000px;
   margin: 0 auto;
   section {
     width: 95%;

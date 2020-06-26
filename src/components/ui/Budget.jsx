@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { ResponsivePieCanvas } from "@nivo/pie";
 
+import Button from "../Button";
 const StyledBudget = styled.div`
   background-color: white;
-  width: 47.5%;
+  width: 45%;
   border-radius: 5px;
 
   .top {
@@ -31,16 +32,6 @@ const StyledBudget = styled.div`
 
     .right {
       margin-right: 1rem;
-
-      button {
-        padding: 0.8rem;
-        background-color: white;
-        border-radius: 10px;
-        color: #8d7ee8;
-        border: 1px solid #8d7ee8;
-        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
-        font-weight: bolder;
-      }
     }
   }
 
@@ -88,7 +79,7 @@ const Budget = () => {
           <p>Budget</p>
         </div>
         <div className="right">
-          <button>Export Report</button>
+          <Button>Export Report</Button>
         </div>
       </div>
       <ResponsivePieCanvas
