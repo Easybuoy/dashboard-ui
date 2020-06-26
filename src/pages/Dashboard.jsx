@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Sidebar from "../components/Sidebar";
 import Header from '../components/Header'
+import Main from "../components/ui/Main";
 
 const StyledDashboard = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ const Dashboard = () => {
       <Sidebar />
       <section>
           <Header />
+          <Main />
       </section>
     </StyledDashboard>
   );

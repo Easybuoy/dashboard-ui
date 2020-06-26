@@ -12,6 +12,7 @@ const StyledNavigationData = styled.div`
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 `;
 
 const NavigationData = () => {

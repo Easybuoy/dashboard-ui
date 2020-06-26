@@ -10,6 +10,7 @@ const StyledHeader = styled.nav`
   flex-wrap: wrap;
   background-color: #182c4d;
   width: 100%;
+
 `;
 
 const Header = () => {
