@@ -13,6 +13,8 @@ const StyledBudget = styled.div`
     justify-content: space-between;
     width: 100%;
     padding-top: 2rem;
+    align-items: center;
+
     .left {
       margin-left: 1rem;
       span {
@@ -29,13 +31,23 @@ const StyledBudget = styled.div`
 
     .right {
       margin-right: 1rem;
+
+      button {
+        padding: 0.8rem;
+        background-color: white;
+        border-radius: 10px;
+        color: #8d7ee8;
+        border: 1px solid #8d7ee8;
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+        font-weight: bolder;
+      }
     }
   }
 
   div {
     canvas {
       width: 100%;
-      height: 400px !important;
+      height: 300px !important;
     }
   }
 `;
