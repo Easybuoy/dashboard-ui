@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Message from "../assets/images/message.svg";
 const StyledInput = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -23,12 +22,12 @@ const StyledInput = styled.div`
   }
 `;
 
-const Input = () => {
+const Input = ({ placeholder, type, icon }) => {
   return (
     <StyledInput>
-      <img src={Message} />
+      <img src={icon} alt={placeholder} />
 
-      <input placeholder="Name" type="text" />
+      <input placeholder={placeholder} type={type} />
     </StyledInput>
   );
 };

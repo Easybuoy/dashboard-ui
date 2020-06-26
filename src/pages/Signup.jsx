@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+
 import Input from "../components/Input";
+import Button from "../components/Button";
+import UserIcon from "../assets/images/user-auth.svg";
+import MailIcon from "../assets/images/mail-auth.svg";
+import PasswordIcon from "../assets/images/lock-auth.svg";
 
 const StyledSignup = styled.section`
   position: relative;
@@ -60,10 +65,34 @@ const StyledSignup = styled.section`
       p {
         color: #788498;
         font-size: 0.8rem;
+        margin: 0;
         font-weight: bold;
+        font-style: italic;
         span {
           color: #57d7bc;
         }
+      }
+
+      .confirmation {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem 0;
+        justify-content: flex-start;
+        input {
+          background-color: white;
+          border: none;
+          margin-right: 0.5rem;
+        }
+        span {
+          color: #4fd9f3;
+        }
+      }
+
+      .action {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
       }
     }
   }
@@ -84,13 +113,33 @@ const Signup = () => {
         </div>
 
         <div className="form">
-          <Input />
-          <Input />
-          <Input />
+          <Input placeholder="Name" type="text" icon={UserIcon} />
+          <Input placeholder="Username or email" type="text" icon={MailIcon} />
+          <Input placeholder="Password" type="password" icon={PasswordIcon} />
 
           <p>
             Password Strength: <span>Strong</span>
           </p>
+
+          <div className="confirmation">
+            <input type="checkbox" />
+            <p>
+              I agree with <span>Privacy Policy</span>
+            </p>
+          </div>
+
+          <div className="action">
+            <Button
+              style={{
+                backgroundColor: "#23cdef",
+                color: "white",
+                border: "none",
+                width: "100px",
+              }}
+            >
+              Sign Up
+            </Button>
+          </div>
         </div>
       </div>
     </StyledSignup>
