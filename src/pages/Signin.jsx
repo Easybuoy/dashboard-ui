@@ -116,6 +116,9 @@ const StyledSignin = styled.section`
     left: 45%;
     bottom: 150px;
     margin: auto;
+    @media only screen and (max-width: 1500px) {
+      bottom: 100px;
+    }
 
     a {
       color: #12c3e5;
