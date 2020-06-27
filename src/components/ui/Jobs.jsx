@@ -183,6 +183,10 @@ and also iPads specifically.
       align-items: center;
       width: 60%;
       margin-left: 0.7rem;
+
+      @media only screen and (max-width: 1500px) {
+        width: 50%;
+    }
       div {
         margin: 0;
       }
