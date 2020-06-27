@@ -9,7 +9,6 @@ import OptionIcon from "../../assets/images/options.svg";
 
 const StyledJobs = styled.div`
   background-color: white;
-  height: 300px;
   width: 95%;
   border-radius: 5px;
 
@@ -18,9 +17,8 @@ const StyledJobs = styled.div`
     border-collapse: collapse;
   }
 
-  /* Zebra striping */
-  tr:nth-of-type(odd) {
-    background: #eee;
+  tr:nth-of-type(even) {
+    background: #f7fafc;
   }
 
   th {
@@ -33,9 +31,8 @@ const StyledJobs = styled.div`
   td,
   th {
     padding: 10px;
-    /* 	border: 1px solid #ccc;  */
     text-align: left;
-    /* font-size: 18px; */
+    font-size: 0.7rem;
 
     div {
       display: flex;
@@ -120,14 +117,13 @@ and also iPads specifically.
     align-items: center;
     background-color: #f1f3f9;
     padding: 0.5rem 2rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     justify-content: space-between;
 
     div {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      /* margin-right: 5rem; */
 
       span {
         font-size: 0.6rem;
@@ -137,26 +133,13 @@ and also iPads specifically.
     }
   }
 
-  /* .tbody {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: white;
-    padding: 1rem 0rem 0 1rem;
-    justify-content: flex-start; */
   .content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    color: #848fa0;
+    color: #172c4d;
     font-weight: bold;
-    /* margin-right: 13rem; */
 
-    /* span {
-        font-size: 0.7rem;
-        margin-right: 0.5rem;
-        color: #afbac8;
-      } */
     p {
       font-size: 0.8rem;
     }
@@ -174,6 +157,7 @@ and also iPads specifically.
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 
     p {
       font-size: 0.8rem;
@@ -197,7 +181,7 @@ and also iPads specifically.
     .pr {
       display: flex;
       align-items: center;
-      width: 70%;
+      width: 60%;
       margin-left: 0.7rem;
       div {
         margin: 0;
@@ -255,192 +239,6 @@ const Jobs = () => {
         <Button>Export Data</Button>
       </div>
 
-      {/* <div className="th">
-        <div>
-          <span>PROJECT</span>
-          <Chevron />
-        </div>
-
-        <div>
-          <span>CREATED AT</span>
-        </div>
-
-        <div>
-          <span>STATUS</span>
-          <Chevron />
-        </div>
-
-        <div>
-          <span>BUDGET</span>
-          <Chevron />
-        </div>
-
-        <div>
-          <span>TEAM</span>
-        </div>
-
-        <div>
-          <span>COMPLETION</span>
-          <Chevron />
-        </div>
-      </div>
-
-      <div className="tbody">
-        <div className="project content" style={{marginRight: '13rem'}}>
-          <img src={Avatar} alt="avatar" />
-          <p>Project X</p>
-        </div>
-
-        <div className="content">
-          <p>20/03/2020</p>
-        </div>
-
-        <div className="content">
-          <div className="circle"></div>
-          <p>Pending</p>
-        </div>
-
-        <div className="content">
-          <p>$2500</p>
-        </div>
-
-        <div className="team content" style={{marginRight: '15rem'}}>
-          <div className="one">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="two">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="three" >
-            <img src={Avatar} alt="avatar" />
-          </div>
-        </div>
-
-        <div className="completion content">
-          <p>20%</p>
-          <Progress color="#f53c55" width="20%" />
-        </div>
-      </div>
-
-      <div className="tbody" style={{ backgroundColor: "#f7fafc" }}>
-        <div className="project content" style={{marginRight: '8rem'}}>
-          <img src={Avatar} alt="avatar" />
-          <p>Dashboard Enterprise</p>
-        </div>
-
-        <div className="content">
-          <p>20/03/2020</p>
-        </div>
-
-        <div className="content" style={{marginRight: '12rem'}}>
-          <div className="circle" style={{ backgroundColor: "#2ccf98" }}></div>
-          <p>Completed</p>
-        </div>
-
-        <div className="content">
-          <p>$4400</p>
-        </div>
-
-        <div className="team content" style={{marginRight: '15rem'}}>
-          <div className="one">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="two">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="three">
-            <img src={Avatar} alt="avatar" />
-          </div>
-        </div>
-
-        <div className="completion content">
-          <p>100%</p>
-          <Progress color="#2ccf98" width="100%" />
-        </div>
-      </div>
-
-      <div className="tbody">
-        <div className="project content" style={{marginRight: '9.7rem'}}>
-          <img src={Avatar} alt="avatar" />
-          <p>The black Project</p>
-        </div>
-
-        <div className="content">
-          <p>20/03/2020</p>
-        </div>
-
-        <div className="content">
-          <div className="circle" style={{ backgroundColor: "#13cdef" }}></div>
-          <p>On Schedule</p>
-        </div>
-
-        <div className="content">
-          <p>$2133</p>
-        </div>
-
-        <div className="team content">
-          <div className="one">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="two">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="three">
-            <img src={Avatar} alt="avatar" />
-          </div>
-        </div>
-
-        <div className="completion content">
-          <p>90%</p>
-          <Progress color="#13cdef" width="90%" />
-        </div>
-      </div>
-
-      <div className="tbody" style={{ backgroundColor: "#f7fafc" }}>
-        <div className="project content">
-          <img src={Avatar} alt="avatar" />
-          <p>React Project</p>
-        </div>
-
-        <div className="content">
-          <p>20/03/2020</p>
-        </div>
-
-        <div className="content">
-          <div className="circle" style={{ backgroundColor: "#fb6340" }}></div>
-          <p>Delayed</p>
-        </div>
-
-        <div className="content">
-          <p>$4566</p>
-        </div>
-
-        <div className="team content">
-          <div className="one">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="two">
-            <img src={Avatar} alt="avatar" />
-          </div>
-
-          <div className="three">
-            <img src={Avatar} alt="avatar" />
-          </div>
-        </div>
-
-        <div className="completion content">
-          <p>72%</p>
-          <Progress color="#fb6240" width="72%" />
-        </div>
-      </div> */}
-
       <table>
         <thead>
           <tr>
@@ -492,7 +290,6 @@ const Jobs = () => {
               </div>
             </td>
             <td data-column="TEAM">
-              {" "}
               <div className="team content">
                 <div className="one">
                   <img src={Avatar} alt="avatar" />
@@ -511,6 +308,163 @@ const Jobs = () => {
               <div className="completion content">
                 <p>20%</p>
                 <Progress className="pr" color="#f53c55" width="20%" />
+                <div className="option">
+                  <img src={OptionIcon} alt="option" />
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-column="PROJECT">
+              <div className="project content">
+                <img src={Avatar} alt="avatar" />
+                <p>Dashboard Enterprise</p>
+              </div>
+            </td>
+            <td data-column="CREATED AT">
+              <div className="content">
+                <p>20/03/2020</p>
+              </div>
+            </td>
+            <td data-column="STATUS">
+              <div className="content">
+                <div
+                  className="circle"
+                  style={{ backgroundColor: "#2ccf98" }}
+                ></div>
+                <p>Completed</p>
+              </div>
+            </td>
+            <td data-column="BUDGET">
+              <div className="content">
+                <p>$4400</p>
+              </div>
+            </td>
+            <td data-column="TEAM">
+              <div className="team content">
+                <div className="one">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+
+                <div className="two">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+
+                <div className="three">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+              </div>
+            </td>
+            <td data-column="COMPLETION">
+              <div className="completion content">
+                <p>100%</p>
+                <Progress className="pr" color="#2ccf98" width="100%" />
+                <div className="option">
+                  <img src={OptionIcon} alt="option" />
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-column="PROJECT">
+              <div className="project content">
+                <img src={Avatar} alt="avatar" />
+                <p>The black Project</p>
+              </div>
+            </td>
+            <td data-column="CREATED AT">
+              <div className="content">
+                <p>20/03/2020</p>
+              </div>
+            </td>
+            <td data-column="STATUS">
+              <div className="content">
+                <div
+                  className="circle"
+                  style={{ backgroundColor: "#13cdef" }}
+                ></div>
+                <p>On Schedule</p>
+              </div>
+            </td>
+            <td data-column="BUDGET">
+              <div className="content">
+                <p>$2133</p>
+              </div>
+            </td>
+            <td data-column="TEAM">
+              <div className="team content">
+                <div className="one">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+
+                <div className="two">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+
+                <div className="three">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+              </div>
+            </td>
+            <td data-column="COMPLETION">
+              <div className="completion content">
+                <p>90%</p>
+                <Progress className="pr" color="#13cdef" width="90%" />
+                <div className="option">
+                  <img src={OptionIcon} alt="option" />
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td data-column="PROJECT">
+              <div className="project content">
+                <img src={Avatar} alt="avatar" />
+                <p>React Project</p>
+              </div>
+            </td>
+            <td data-column="CREATED AT">
+              <div className="content">
+                <p>20/03/2020</p>
+              </div>
+            </td>
+            <td data-column="STATUS">
+              <div className="content">
+                <div
+                  className="circle"
+                  style={{ backgroundColor: "#fb6340" }}
+                ></div>
+                <p>Delayed</p>
+              </div>
+            </td>
+            <td data-column="BUDGET">
+              <div className="content">
+                <p>$4566</p>
+              </div>
+            </td>
+            <td data-column="TEAM">
+              <div className="team content">
+                <div className="one">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+
+                <div className="two">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+
+                <div className="three">
+                  <img src={Avatar} alt="avatar" />
+                </div>
+              </div>
+            </td>
+            <td data-column="COMPLETION">
+              <div className="completion content">
+                <p>72%</p>
+                <Progress className="pr" color="#fb6240" width="72%" />
+
                 <div className="option">
                   <img src={OptionIcon} alt="option" />
                 </div>
