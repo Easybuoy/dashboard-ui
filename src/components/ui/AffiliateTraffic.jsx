@@ -108,25 +108,6 @@ const AffiliateTraffic = () => {
         colors={{ scheme: "category10" }}
         isInteractive={false}
         enableLabel={false}
-        defs={[
-          {
-            id: "dots",
-            type: "patternDots",
-            background: "inherit",
-            color: "#38bcb2",
-            size: 4,
-            padding: 1,
-            stagger: true,
-          },
-          {
-            id: "lines",
-            background: "inherit",
-            color: "#eed312",
-            rotation: -45,
-            lineWidth: 6,
-            spacing: 10,
-          },
-        ]}
         fill={[
           {
             match: {

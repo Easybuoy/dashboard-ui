@@ -8,7 +8,7 @@ import Avatar from "../../assets/images/avatar.jpg";
 const StyledJobs = styled.div`
   background-color: white;
   height: 300px;
-  width: 90%;
+  width: 95%;
   border-radius: 5px;
 
   .header {

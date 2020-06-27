@@ -42,7 +42,7 @@ const StyledBudget = styled.div`
 
     div {
       display: flex;
-    justify-content: center;
+      justify-content: center;
       width: auto;
       canvas {
         width: auto !important;
