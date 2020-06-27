@@ -16,15 +16,17 @@ const StyledProgress = styled.div`
     width: 70%;
     position: relative;
     border-radius: 10px;
-
   }
 `;
 
-const Progress = ({ color, width }) => {
+const Progress = ({ color, width, ...rest }) => {
   return (
-    <StyledProgress>
+    <StyledProgress {...rest}>
       <div className="progress">
-        <div className="progress-bar" style={{ backgroundColor:color, width }}></div>
+        <div
+          className="progress-bar"
+          style={{ backgroundColor: color, width }}
+        ></div>
       </div>
     </StyledProgress>
   );
