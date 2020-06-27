@@ -25,7 +25,7 @@ const StyledSignin = styled.section`
   .signup {
     position: absolute;
     background-color: #f7fafc;
-    height: 50vh;
+    height: 60vh;
     width: 30%;
     border-radius: 10px;
     display: flex;
@@ -114,7 +114,7 @@ const StyledSignin = styled.section`
     position: absolute;
     border-radius: 10px;
     left: 45%;
-    bottom: 200px;
+    bottom: 150px;
     margin: auto;
 
     a {
