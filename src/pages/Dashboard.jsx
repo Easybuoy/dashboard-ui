@@ -14,7 +14,6 @@ const StyledDashboard = styled.div`
     width: 95%;
     background-color: #f1f3f9;
     position: relative;
-    /* height: 100vh; */
     overflow-y: scroll;
   }
 `;
