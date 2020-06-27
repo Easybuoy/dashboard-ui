@@ -172,7 +172,7 @@ const Signin = ({ history }) => {
 
       <div className="footer">
         <p style={{ color: "white" }}>
-          New to Product? <Link to="/register">Sign Up</Link>
+          New to Product? <Link to="/">Sign Up</Link>
         </p>
       </div>
     </StyledSignin>
