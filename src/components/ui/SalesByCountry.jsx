@@ -109,7 +109,7 @@ const SalesByCountry = () => {
               <p>Russia</p>
               <span>$203,000</span>
             </div>
-            <Progress color="#7764e4" />
+            <Progress color="#7764e4" width="80%" />
           </div>
 
           <div className="content-detail-container">
@@ -117,7 +117,7 @@ const SalesByCountry = () => {
               <p>Australia</p>
               <span>$203,000</span>
             </div>
-            <Progress color="#32ce97" />
+            <Progress color="#32ce97" width="30%"/>
           </div>
 
           <div className="content-detail-container">
@@ -125,7 +125,7 @@ const SalesByCountry = () => {
               <p>China</p>
               <span>$203,000</span>
             </div>
-            <Progress color="#feb969" />
+            <Progress color="#feb969" width="50%" />
           </div>
 
           <div className="content-detail-container">
@@ -133,7 +133,7 @@ const SalesByCountry = () => {
               <p>Algeria</p>
               <span>$203,000</span>
             </div>
-            <Progress color="#f53c56" />
+            <Progress color="#f53c56" width="40%" />
           </div>
 
           <div className="content-detail-container">
@@ -141,7 +141,7 @@ const SalesByCountry = () => {
               <p>United States</p>
               <span>$203,000</span>
             </div>
-            <Progress color="#fb633f" />
+            <Progress color="#fb633f" width="50%" />
           </div>
         </div>
       </div>

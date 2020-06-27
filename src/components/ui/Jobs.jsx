@@ -54,12 +54,12 @@ const StyledJobs = styled.div`
     align-items: center;
     background-color: white;
     padding: 0.5rem 1rem;
-    justify-content: space-between;
-    div {
+    justify-content: flex-start;
+    .content {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      /* margin-right: 2rem; */
+      margin-right: 10rem;
 
       /* span {
         font-size: 0.7rem;
@@ -101,13 +101,13 @@ const StyledJobs = styled.div`
       display: flex;
       align-items: center;
       width: 15%;
+      margin-right: 0;
 
       div {
         display: flex;
         align-items: center;
         width: 70%;
         margin-left: 0.7rem;
-
         div {
           margin: 0;
         }
@@ -181,25 +181,25 @@ const Jobs = () => {
       </div>
 
       <div className="tbody">
-        <div className="project">
+        <div className="project content">
           <img src={Avatar} alt="avatar" />
           <p>Project X</p>
         </div>
 
-        <div>
+        <div className="content">
           <p>20/03/2020</p>
         </div>
 
-        <div>
+        <div className="content">
           <div className="circle"></div>
           <p>Pending</p>
         </div>
 
-        <div>
+        <div className="content">
           <p>$2500</p>
         </div>
 
-        <div className="team">
+        <div className="team content">
           <div className="one">
             <img src={Avatar} alt="avatar" />
           </div>
@@ -213,32 +213,32 @@ const Jobs = () => {
           </div>
         </div>
 
-        <div className="completion">
+        <div className="completion content">
           <p>20%</p>
           <Progress color="#f53c55" width="20%" />
         </div>
       </div>
 
-      <div className="tbody">
-        <div className="project">
+      <div className="tbody" style={{ backgroundColor: "#f7fafc" }}>
+        <div className="project content">
           <img src={Avatar} alt="avatar" />
-          <p>Dashboard Expertise</p>
+          <p>Dashboard Enterprise</p>
         </div>
 
-        <div>
+        <div className="content">
           <p>20/03/2020</p>
         </div>
 
-        <div>
-          <div className="circle"></div>
-          <p>Pending</p>
+        <div className="content">
+          <div className="circle" style={{ backgroundColor: "#2ccf98" }}></div>
+          <p>Completed</p>
         </div>
 
-        <div>
+        <div className="content">
           <p>$4400</p>
         </div>
 
-        <div className="team">
+        <div className="team content">
           <div className="one">
             <img src={Avatar} alt="avatar" />
           </div>
@@ -252,32 +252,32 @@ const Jobs = () => {
           </div>
         </div>
 
-        <div className="completion">
+        <div className="completion content">
           <p>100%</p>
           <Progress color="#2ccf98" width="100%" />
         </div>
       </div>
 
       <div className="tbody">
-        <div className="project">
+        <div className="project content">
           <img src={Avatar} alt="avatar" />
-          <p>Project X</p>
+          <p>The black Project</p>
         </div>
 
-        <div>
+        <div className="content">
           <p>20/03/2020</p>
         </div>
 
-        <div>
-          <div className="circle"></div>
-          <p>Pending</p>
+        <div className="content">
+          <div className="circle" style={{ backgroundColor: "#13cdef" }}></div>
+          <p>On Schedule</p>
         </div>
 
-        <div>
-          <p>$2500</p>
+        <div className="content">
+          <p>$2133</p>
         </div>
 
-        <div className="team">
+        <div className="team content">
           <div className="one">
             <img src={Avatar} alt="avatar" />
           </div>
@@ -291,32 +291,32 @@ const Jobs = () => {
           </div>
         </div>
 
-        <div className="completion">
-          <p>20%</p>
-          <Progress color="#7764e4" />
+        <div className="completion content">
+          <p>90%</p>
+          <Progress color="#13cdef" width="90%" />
         </div>
       </div>
 
-      <div className="tbody">
-        <div className="project">
+      <div className="tbody" style={{ backgroundColor: "#f7fafc" }}>
+        <div className="project content">
           <img src={Avatar} alt="avatar" />
-          <p>Project X</p>
+          <p>React Project</p>
         </div>
 
-        <div>
+        <div className="content">
           <p>20/03/2020</p>
         </div>
 
-        <div>
-          <div className="circle"></div>
-          <p>Pending</p>
+        <div className="content">
+          <div className="circle" style={{ backgroundColor: "#fb6340" }}></div>
+          <p>Delayed</p>
         </div>
 
-        <div>
-          <p>$2500</p>
+        <div className="content">
+          <p>$4566</p>
         </div>
 
-        <div className="team">
+        <div className="team content">
           <div className="one">
             <img src={Avatar} alt="avatar" />
           </div>
@@ -330,9 +330,9 @@ const Jobs = () => {
           </div>
         </div>
 
-        <div className="completion">
-          <p>20%</p>
-          <Progress color="#7764e4" />
+        <div className="completion content">
+          <p>72%</p>
+          <Progress color="#fb6240" width="72%" />
         </div>
       </div>
     </StyledJobs>
