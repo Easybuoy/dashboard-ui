@@ -6,6 +6,8 @@ import Chevron from "../Chevron";
 import Progress from "../Progress";
 import Avatar from "../../assets/images/avatar.jpg";
 import OptionIcon from "../../assets/images/options.svg";
+import ChevronLeft from "../../assets/images/chevron-left.svg";
+import ChevronRight from "../../assets/images/chevron-right.svg";
 
 const StyledJobs = styled.div`
   background-color: white;
@@ -157,7 +159,6 @@ and also iPads specifically.
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
 
     p {
       font-size: 0.8rem;
@@ -186,14 +187,13 @@ and also iPads specifically.
 
       @media only screen and (max-width: 1500px) {
         width: 50%;
-    }
+      }
       div {
         margin: 0;
       }
     }
 
     .option {
-      /* width: 10%; */
       background-color: white;
       display: flex;
       border-radius: 50%;
@@ -232,7 +232,42 @@ and also iPads specifically.
       border-radius: 50%;
     }
   }
-  /* } */
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 1rem;
+
+    img {
+      padding: 0.5rem;
+      width: 10px;
+      height: 10px;
+    }
+    .page {
+      border-radius: 50%;
+      border: 1px solid #96a3b4;
+      margin: 0 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        color: #7764e4;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+      }
+    }
+    .active {
+      background-color: #7764e4;
+      border: none;
+      p {
+        margin: 0;
+        color: white;
+      }
+    }
+  }
 `;
 
 const Jobs = () => {
@@ -477,6 +512,30 @@ const Jobs = () => {
           </tr>
         </tbody>
       </table>
+
+      <div className="pagination">
+        <div className="page">
+          <img src={ChevronLeft} alt="left" />
+        </div>
+        <div className="page active">
+          <p>1</p>
+        </div>
+
+        <div className="page">
+          <p>2</p>
+        </div>
+
+        <div className="page">
+          <p>3</p>
+        </div>
+
+        <div className="page">
+          <p>4</p>
+        </div>
+        <div className="page">
+          <img src={ChevronRight} alt="lerightt" />
+        </div>
+      </div>
     </StyledJobs>
   );
 };
