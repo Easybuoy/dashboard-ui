@@ -35,10 +35,19 @@ const StyledBudget = styled.div`
     }
   }
 
-  div {
-    canvas {
-      width: 100%;
-      height: 450px !important;
+  .chart {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    div {
+      display: flex;
+    justify-content: center;
+      width: auto;
+      canvas {
+        width: auto !important;
+        height: 450px !important;
+      }
     }
   }
 `;
@@ -82,42 +91,45 @@ const Budget = () => {
           <Button>Export Report</Button>
         </div>
       </div>
-      <ResponsivePieCanvas
-        data={data}
-        margin={{ top: 40, right: 200, bottom: 40, left: 80 }}
-        pixelRatio={1}
-        innerRadius={0.5}
-        padAngle={0.7}
-        cornerRadius={3}
-        colors={{ scheme: "paired" }}
-        borderColor={{ from: "color", modifiers: [["darker", 0.6]] }}
-        radialLabelsSkipAngle={10}
-        radialLabelsTextXOffset={6}
-        radialLabelsTextColor="#333333"
-        radialLabelsLinkOffset={0}
-        radialLabelsLinkDiagonalLength={16}
-        radialLabelsLinkHorizontalLength={24}
-        radialLabelsLinkStrokeWidth={1}
-        radialLabelsLinkColor={{ from: "color" }}
-        slicesLabelsSkipAngle={10}
-        slicesLabelsTextColor="#333333"
-        animate={true}
-        motionStiffness={90}
-        motionDamping={15}
-        isInteractive={false}
-        legends={[
-          {
-            anchor: "right",
-            direction: "column",
-            translateX: 140,
-            itemWidth: 60,
-            itemHeight: 14,
-            itemsSpacing: 2,
-            symbolSize: 14,
-            symbolShape: "circle",
-          },
-        ]}
-      />
+
+      <div className="chart">
+        <ResponsivePieCanvas
+          data={data}
+          margin={{ top: 40, right: 200, bottom: 40, left: 80 }}
+          pixelRatio={1}
+          innerRadius={0.5}
+          padAngle={0.7}
+          cornerRadius={3}
+          colors={{ scheme: "paired" }}
+          borderColor={{ from: "color", modifiers: [["darker", 0.6]] }}
+          radialLabelsSkipAngle={10}
+          radialLabelsTextXOffset={6}
+          radialLabelsTextColor="#333333"
+          radialLabelsLinkOffset={0}
+          radialLabelsLinkDiagonalLength={16}
+          radialLabelsLinkHorizontalLength={24}
+          radialLabelsLinkStrokeWidth={1}
+          radialLabelsLinkColor={{ from: "color" }}
+          slicesLabelsSkipAngle={10}
+          slicesLabelsTextColor="#333333"
+          animate={true}
+          motionStiffness={90}
+          motionDamping={15}
+          isInteractive={false}
+          legends={[
+            {
+              anchor: "right",
+              direction: "column",
+              translateX: 140,
+              itemWidth: 60,
+              itemHeight: 14,
+              itemsSpacing: 2,
+              symbolSize: 14,
+              symbolShape: "circle",
+            },
+          ]}
+        />
+      </div>
     </StyledBudget>
   );
 };

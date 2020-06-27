@@ -24,12 +24,16 @@ const StyledNavigation = styled.nav`
 
     img {
       margin-right: 0.3rem;
+      margin-left: 0.3rem;
     }
     input {
       padding-left: 1rem;
       width: auto;
       border: none;
       width: 70%;
+      &:focus {
+        outline-color: white;
+      }
     }
   }
 

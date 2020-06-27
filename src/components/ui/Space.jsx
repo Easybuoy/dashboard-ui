@@ -20,7 +20,7 @@ const StyledSpace = styled.div`
     justify-content: flex-start;
 
     h4 {
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: bold;
       color: #43435d;
       margin: 0 0 0.2rem 0;
@@ -29,13 +29,15 @@ const StyledSpace = styled.div`
 
     span {
       color: #8898aa;
-      font-size: 0.6rem;
+      font-size: 0.7rem;
     }
 
     p {
       font-size: 0.7rem;
       color: #52617b;
       font-weight: bold;
+      line-height: 1.5;
+      margin: 1rem 0;
     }
 
     a {

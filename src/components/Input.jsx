@@ -19,6 +19,11 @@ const StyledInput = styled.div`
     padding: 0.5rem 1rem;
     width: 70%;
     font-weight: bold;
+
+    &:focus {
+      border: none;
+      outline-color: white;
+    }
   }
 `;
 
